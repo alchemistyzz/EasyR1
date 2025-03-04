@@ -8,8 +8,7 @@ export WANDB_PROJECT=verl_test
 export WANDB_API_KEY="19e2bb17296ca54e3b6de27ef184eac2eb7efd5f"
 export WANDB_RUN_NAME=Qwen-VL2_5-3B-GRPO-$(date +%Y-%m-%d-%H-%M-%S)
 
-# 如果不使用 wandb，则禁用
-export WANDB_DISABLED=true
+
 
 MODEL_PATH=Qwen/Qwen2.5-VL-3B-Instruct  # replace it with your local file path
 
