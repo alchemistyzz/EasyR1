@@ -3,6 +3,10 @@ set -x
 # 指定使用所有 4 张 A100
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 export VLLM_ATTENTION_BACKEND=XFORMERS
+export WANDB_BASE_URL=https://api.wandb.ai
+export WANDB_PROJECT=verl_test
+export WANDB_API_KEY="19e2bb17296ca54e3b6de27ef184eac2eb7efd5f"
+export WANDB_RUN_NAME=Qwen-VL2_5-3B-GRPO-$(date +%Y-%m-%d-%H-%M-%S)
 
 # 如果不使用 wandb，则禁用
 export WANDB_DISABLED=true
